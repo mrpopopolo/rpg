@@ -1,0 +1,37 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+ 	<head>
+    	<meta charset="utf-8">
+    	<title>Pops Quest</title>
+	</head>
+	<body>
+    	<div>
+    		<div>X = wall ; E = exit; M = monster; P = player spawning spot</div>
+    		<div>
+    			<form method="post" th:action="@{/mapEditor}">
+    				<textarea id="mapDesign" name="mapDesign" style="resize:none;" rows="20" cols="20" maxlength="438">XXXXXXXXXXXXXXXXXXXXX
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+X                   X
+XXXXXXXXXXXXXXXXXXXXX</textarea>
+    				<button type="submit">Submit</button>
+    			</form>
+    		</div>
+	    </div>
+  	</body>
+</html>
